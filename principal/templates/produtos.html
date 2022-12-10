@@ -1,0 +1,15 @@
+
+{% extends 'base.html' %}
+{% block conteudo %}
+<div class="row">
+   {% for produto in produtos %}   
+    <div class="col-3 produtos">
+        <a class="nav-link" href="{% url 'detalhes' produto.id %}"></a>
+            <img src = "/media/{{ produto.imagem }}" width="250px" height="250px">
+        </a>
+        <a class = "title" href ="{% url 'detalhes' produto.id %}"> {{ produto.nome }}</a>
+        <p>R${{produto.valor}}</p>
+    </div>
+   {% endfor %} 
+   </div>
+{% endblock conteudo %}
