@@ -18,7 +18,7 @@ class Produto(models.Model):
     
 class Cliente(models.Model):
     nome = models.CharField(max_length=80)
-    telefone = models.CharField(max_length=20)
+    telefone = models.CharField(max_length=20, blank=True, null=True)
     cpf = models.CharField(max_length=15)
     
     def __str__(self):
@@ -27,10 +27,11 @@ class Cliente(models.Model):
 class Pedido(models.Model):
     valor = models.DecimalField('Preço do produto',max_digits=8, decimal_places=2)
     quantidade = models.CharField(max_length=20)
-    observacao = models.TextField()
     mesa = models.CharField(max_length=5)
+    observacao = models.TextField()
     cliente = models.ForeignKey(Cliente, on_delete= models.CASCADE)
     produto = models.ForeignKey(Produto, on_delete= models.CASCADE)
+    
     
 class Conta(models.Model):
     pagamento = models.CharField(max_length=80)

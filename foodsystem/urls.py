@@ -24,7 +24,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index, name ='index'),
     path('produtos/', produtos, name = 'produtos'),
-    path('login/', login, name = 'login'),
+    path('cadastro_cliente/', cadastro_cliente, name = 'cadastro_cliente'),
     path('detalhes/<int:id>', detalhes, name = 'detalhes'),
     path('cadastro/', cadastro, name ='cadastro'),
     

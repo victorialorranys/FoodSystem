@@ -1,13 +1,13 @@
 body {
-    background-color: red;
+    background-color: white;
     margin:auto;
     font-family: 'Roboto Condensed', sans-serif;
     }
 footer{
-    background-color: #CDB8E3;
+    background-color:#F28705;
 }
 .navbar{
-    background-color: #CDB8E3 ;
+    background-color: #F28705 ;
     
 }
 .tittle{
@@ -15,9 +15,6 @@ footer{
     color: black;
 }
 .produtos{
-    border: solid 2px;
-    border-radius: 10px;
-    border-color: gray;
     margin-bottom: 15px;
     margin-top: 15px;
    
@@ -38,7 +35,7 @@ footer{
     max-height: 150px;
 }
 .rodape{
-    background-color: #CDB8E3;
+    background-color: #F28705;
     margin-top: 20px;
     margin-bottom: 10px;
     margin-left: 57px;

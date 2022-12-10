@@ -9,5 +9,7 @@ admin.site.register(Categoria)
 admin.site.register(Produto,ProdutoAdmin)
 admin.site.register(Cliente)
 admin.site.register(Pedido)
+admin.site.register(Conta)
+
 
 

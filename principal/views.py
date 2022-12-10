@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from principal.models import *
+from principal.forms import *
 
 def index(request):
     return render(request,"index.html")
@@ -9,8 +10,9 @@ def produtos(request):
     context = {'produtos': lista}
     return render (request, 'produtos.html',context)
 
-def login(request):
-    return render(request, 'login.html')
+def cadastro_cliente(request):
+    form = ClienteForm()
+    return render(request, 'cadastro_cliente.html', {'form' : form })
 
 def cadastro(request):
     return render(request, 'cadastro.html')
