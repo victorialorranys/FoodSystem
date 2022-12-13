@@ -9,6 +9,7 @@
         </a>
         <a class = "title" href ="{% url 'detalhes' produto.id %}"> {{ produto.nome }}</a>
         <p>R${{produto.valor}}</p>
+        <button type="submit">+ Adicionar</button>
     </div>
    {% endfor %} 
    </div>

@@ -14,8 +14,8 @@ def cadastro_cliente(request):
     form = ClienteForm()
     return render(request, 'cadastro_cliente.html', {'form' : form })
 
-def cadastro(request):
-    return render(request, 'cadastro.html')
+def carrinho(request):
+    return render(request, 'carrinho.html')
 
 def detalhes (request,id):
     produto = Produto.objects.get(id=id)

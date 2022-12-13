@@ -26,6 +26,6 @@ urlpatterns = [
     path('produtos/', produtos, name = 'produtos'),
     path('cadastro_cliente/', cadastro_cliente, name = 'cadastro_cliente'),
     path('detalhes/<int:id>', detalhes, name = 'detalhes'),
-    path('cadastro/', cadastro, name ='cadastro'),
+    path('carrinho/', carrinho, name ='carrinho'),
     
 ]+ static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
